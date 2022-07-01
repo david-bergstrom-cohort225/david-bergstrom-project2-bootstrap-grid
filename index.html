@@ -8,16 +8,77 @@
 
         <title>Document</title>
         <link rel="stylesheet" href="style.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-            crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     </head>
 
     <body>
+        <div class="container-fluid vh-100 myborder1">
+            <div class="row myborder2 h-100">
+
+                <!-- Navbar for Email Navigation -->
+                <div class="col-2 myborder3">
+                    <nav class="navbar navbar-expand-sm">
+                        <div class="div-container-fluid">
+
+                            <!-- Toggle Button for Mobile -->
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#main-nav">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <!-- Main Navbar Links (Non Mobile) -->
+                            <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+                                <ul class="navbar-nav flex-column align-items-start">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="">Inbox</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="">Sent</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="">Drafts</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="">Trash</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </nav>
+                </div>
+
+
+
+
+                <div class="col-10 col-lg-9 myborder4">
+                    <div class="row h-100">
+                        <!-- Email List -->
+                        <div class="col-sm-12 col-lg-6 half-height myborder5">
+                            <div class="bg-primary p-3 m-2 border border-dark rounded">Email 1</div>
+                            <div class="bg-secondary p-3 m-2 border border-dark rounded">Email 2</div>
+                            <div class="bg-secondary p-3 m-2 border border-dark rounded">Email 3</div>
+                            <div class="bg-secondary p-3 m-2 border border-dark rounded">Email 4</div>
+                        </div>
+
+                        <!-- Email Contents -->
+                        <div class="col-sm-12 col-lg-6 half-height myborder5">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error repellendus veniam nihil
+                                earum
+                                consequuntur dolores inventore quo non, dignissimos odio et, voluptatibus aspernatur
+                                esse
+                                praesentium maiores quidem quaerat maxime a.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
         <script src="index.js"></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
             crossorigin="anonymous"></script>
     </body>
