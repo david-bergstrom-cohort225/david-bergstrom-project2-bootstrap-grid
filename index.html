@@ -13,22 +13,44 @@
     </head>
 
     <body>
+        <!-- Container for Entire Email Website -->
         <div class="container-fluid vh-100 myborder1">
-            <div class="row myborder2 h-100">
 
-                <!-- Navbar for Email Navigation -->
+            <!-- Top Search Bar (Always Visible) and Hamburger Menu (Hamburger Menu Visible only on XS Mobile Screens) -->
+            <div class="row">
+                <div class="col myborder3">
+                    <div class="row myborder2">
+                        <div class="col d-flex myborder3">
+                            <!-- Navigation Hamburger Icon (Visible only on XS Mobile Screens) -->
+                            <nav class="navbar navbar-expand-sm d-block d-sm-none me-3">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                                    data-bs-target="#mainNav">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                            </nav>
+                            <!-- Search Bar -->
+                            <input class="align-self-center mt-2 mb-2" type="text" placeholder="Search">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Row that Encompasses Nav and Emails -->
+            <div class="row h-100 myborder2">
+                <!--
+                <!-- Navbar for Email Navigation - ->
                 <div class="col-2 myborder3">
                     <nav class="navbar navbar-expand-sm">
                         <div class="div-container-fluid">
-
-                            <!-- Toggle Button for Mobile -->
+                            <!-- Toggle Button for Mobile - ->
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#main-nav">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
 
-                            <!-- Main Navbar Links (Non Mobile) -->
-                            <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+                            <!-- Main Navbar Links (Non Mobile) - ->
+                            <div class="collapse navbar-collapse justify-content-end align-center" id="mainNav">
                                 <ul class="navbar-nav flex-column align-items-start">
                                     <li class="nav-item">
                                         <a class="nav-link" href="">Inbox</a>
@@ -48,14 +70,33 @@
                         </div>
                     </nav>
                 </div>
+                -->
 
 
+                <!-- Left Navigation Sidebar (Hidden on XS Mobile Screens) -->
+                <div class="col-sm-2 d-none d-sm-block myborder3">
+                    <ul class="navbar-nav flex-column align-items-start">
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Inbox</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Sent</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Drafts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Trash</a>
+                        </li>
+                    </ul>
+                </div>
 
 
-                <div class="col-10 col-lg-9 myborder4">
+                <!-- Email List and Email Contents -->
+                <div class="col-xs-12 col-sm-10 myborder6">
                     <div class="row h-100">
                         <!-- Email List -->
-                        <div class="col-sm-12 col-lg-6 half-height myborder5">
+                        <div class="col-sm-12 col-lg-6 myborder5">
                             <div class="bg-primary p-3 m-2 border border-dark rounded">Email 1</div>
                             <div class="bg-secondary p-3 m-2 border border-dark rounded">Email 2</div>
                             <div class="bg-secondary p-3 m-2 border border-dark rounded">Email 3</div>
@@ -63,12 +104,22 @@
                         </div>
 
                         <!-- Email Contents -->
-                        <div class="col-sm-12 col-lg-6 half-height myborder5">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error repellendus veniam nihil
-                                earum
-                                consequuntur dolores inventore quo non, dignissimos odio et, voluptatibus aspernatur
-                                esse
-                                praesentium maiores quidem quaerat maxime a.</p>
+                        <div class="col-sm-12 col-lg-6 myborder5">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia ipsam rem aperiam facere
+                                commodi nobis ipsum nam at illum mollitia harum modi architecto, quo repellendus! Dolor
+                                temporibus accusamus laborum dignissimos commodi obcaecati maxime, tempore quibusdam
+                                voluptatem rerum necessitatibus eius pariatur sequi libero veritatis vitae natus eaque.
+                                Doloremque quo eligendi itaque perspiciatis non consequuntur provident inventore
+                                molestiae atque, quod velit suscipit minima, blanditiis odio. Iure officia quis eius
+                                natus, nobis consequuntur laborum quaerat eum! Non et molestias, harum ipsum omnis odio
+                                odit aspernatur nobis enim necessitatibus. Voluptatibus dicta animi nisi repellat id
+                                perspiciatis cum culpa. Perferendis adipisci delectus dolorem, mollitia cum recusandae
+                                quisquam odio consectetur omnis fugit autem id quasi similique! Minima omnis architecto
+                                itaque repellat, sunt eius aliquam? Sunt ipsum harum possimus fugiat in natus blanditiis
+                                at suscipit est rem incidunt dignissimos, numquam porro, quae minima iste laudantium
+                                omnis accusantium esse! Iure quas in deleniti possimus eos, harum, nulla quod, ipsum
+                                culpa ullam voluptas dicta earum fugiat! Facere repellat totam placeat neque, et eaque
+                                ullam consequuntur at quaerat dolore</p>
                         </div>
                     </div>
                 </div>
